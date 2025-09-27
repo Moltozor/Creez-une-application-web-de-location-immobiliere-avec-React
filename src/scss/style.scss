@@ -1,0 +1,46 @@
+$colorOne: #FF6060;
+$colorTwo: #F6F6F6;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* DropDown component */
+
+.content_dropDown {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+
+    .dropDown {
+        background-color: $colorOne;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 5px;
+
+        &_elements {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            color: white;
+
+            & h3 {padding-left: 15px;}
+            & img {margin-right: 15px;}
+
+        }
+
+        &_Content {
+            background-color: $colorTwo;
+            width: 100%;
+            display: none;
+        }
+
+
+    }
+}

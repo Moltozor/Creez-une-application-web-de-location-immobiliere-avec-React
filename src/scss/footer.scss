@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    height: 209px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_sentence {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+
+        margin: 0;
+        margin-top: 28px;
+    }
+}

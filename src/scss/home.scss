@@ -1,0 +1,71 @@
+.body {
+
+    display: flex;
+    flex-direction: column;
+    margin-inline: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .body_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 223px;
+        border-radius: 25px;
+
+
+        background-image: url('../assets/bodyPicture.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &_title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        vertical-align: bottom;
+        color: white;
+    }
+
+    }
+
+    
+
+    .rental {
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        padding: 56px 50px;
+        margin-top: 43px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 340px;
+        row-gap: 50px;
+        column-gap: 60px;
+
+        &_container {
+            background-position: center;
+            background-size: cover;
+
+            display: flex;
+            align-items: end;
+            border-radius: 10px;
+
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: white;
+
+            &_title {
+                height: 44px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+
+                & h3 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
