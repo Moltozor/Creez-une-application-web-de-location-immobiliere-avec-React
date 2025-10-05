@@ -7,13 +7,14 @@ import { Link } from 'react-router';
 export function Home() {
 
     const [data, setData] = useState([]);
-    //console.log(data.length)
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch('./data.json')
                 const data = await response.json()
+                console.log('dataItem=', data)
+
 
                 setData(data)
             } catch (error) {
@@ -23,6 +24,8 @@ export function Home() {
         fetchData();
     }, [])
 
+    
+
     return (
         <div>
             <Header />
@@ -30,8 +33,8 @@ export function Home() {
 
                 <Banner title={'Chez vous, partout et ailleurs'} imageUrl={bodyImg} />
                 <div className='rental'>
-                    {data.map((item, index) => (
-                        <Link className='rental_container' key={index} style={{ backgroundImage: `url(${item.cover})` }}>
+                    {data.map((item) => (
+                        <Link to={`/housing/${item.id}`} className='rental_container' key={item.id} style={{ backgroundImage: `url(${item.cover})` }}>
                             <div className='rental_container_title'>
                                 <h3> {item.title}</h3>
                             </div>
