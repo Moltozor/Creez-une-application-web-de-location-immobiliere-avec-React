@@ -31,7 +31,7 @@ export function About() {
     ];
 
     return (
-        <div>
+        <div className='screan'>
             <Header />
             <div className='body'>
                 <Banner imageUrl={AboutImg} />

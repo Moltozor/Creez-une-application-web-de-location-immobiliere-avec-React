@@ -23,19 +23,3 @@ export function DropDown({title, content}) {
     </>
   )
 }
-
-
-
-/*
-aboutList.map((elem, index) => (
-    <div key={index} className='dropDown'>
-      <div className='dropDown_elements'>
-        <h3>{elem.title}</h3>
-        <img src={dropDownArrow} alt="" />
-      </div>
-      <div className='dropDown_Content'>
-        <p>{elem.content}</p>
-      </div>
-    </div>
-
-    */

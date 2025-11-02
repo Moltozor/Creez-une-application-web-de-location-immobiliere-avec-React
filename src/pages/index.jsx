@@ -1,4 +1,5 @@
 import { Home } from './home'
 import { About } from './about'
 import { Housing } from './housing'
-export { Home, About, Housing }
+import { ErrorPage } from './error404'
+export { Home, About, Housing, ErrorPage }

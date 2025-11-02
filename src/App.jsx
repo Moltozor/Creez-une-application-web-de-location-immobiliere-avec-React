@@ -1,21 +1,20 @@
 
 import { BrowserRouter, Routes, Route } from "react-router";
-import { Home, About, Housing } from './pages'
+import { Home, About, Housing, ErrorPage } from './pages'
 
 function App() {
 
-
+ 
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/housing/:id" element={<Housing />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
-
-
     </>
   )
 }

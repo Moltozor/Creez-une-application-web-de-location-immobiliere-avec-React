@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-import { Header, Footer, SliderPictures } from "../components";
+import { Header, Footer, Carrousel, Description } from "../components";
 import { useParams } from 'react-router-dom';
 import '../styles/index.css'
+import { StarRate } from "../components/starRate";
+import { ErrorPage } from "./error404";
 
 export function Housing() {
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(null);
     const { id } = useParams();
 
     //console.log('data=', data)
@@ -24,26 +26,33 @@ export function Housing() {
 
     }, [id])
 
-    const style = {
-        width: '100%',
-        height: '25px',
-        backgroundColor: 'red',
-    }
 
+    if(!data) {
+        return <ErrorPage />
+    }
+    console.log(data)
 
     return (
-        <div>
-            <Header />
-            {data ? <SliderPictures pictures={data.pictures} /> : null}
-            <div className="description">
-                <div className="one" style={style}></div>
-                <div className="two" style={style}></div>
-                <div className="three" style={style}></div>
-                <div className="four" style={style}></div>
-                <div className="five" style={style}></div>
+        <div className="screan">
+                <Header />
+                {data ? <Carrousel pictures={data.pictures} /> : null}
+                {data ? <Description data={data} /> : null}
+                <Footer />
             </div>
-            <Footer />
-        </div>
     )
+    /*
+        if (data.find((item) => item.id === id ? 1 : 0)) {
+            return (
+                <div className="screan">
+                    <Header />
+                    {data ? <Carrousel pictures={data.pictures} /> : null}
+                    {data ? <Description data={data} /> : null}
+                    <Footer />
+                </div>
+            )
+        }
+        
+        return <ErrorPage />
+    */
 
 }

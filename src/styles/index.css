@@ -5,10 +5,12 @@ body {
 
 /* DropDown component */
 .content_dropDown {
-  margin-top: 38px;
   display: flex;
   flex-direction: column;
   row-gap: 28px;
+  margin-top: 38px;
+  padding-left: 108.5px;
+  padding-right: 108.5px;
 }
 .content_dropDown .dropDown {
   background-color: #FF6060;
@@ -34,31 +36,180 @@ body {
   width: 100%;
   display: none;
 }
+.content_dropDown .dropDown_Content p {
+  padding: 15px;
+}
 
+@media (min-width: 375px) and (max-width: 767.98px) {
+  /* Home and About pages */
+  .screan {
+    display: flex;
+    flex-direction: column;
+  }
+  .screan .header {
+    margin: 20px 20px 27px 20px;
+  }
+  .screan .header_logo {
+    width: 145px;
+  }
+  .screan .header_nav {
+    display: flex;
+    column-gap: 26px;
+    font-size: 12px;
+  }
+  .screan .header_nav a:-webkit-any-link {
+    font-size: 12px;
+  }
+  .screan .body {
+    margin: 0 20px 0 20px;
+  }
+  .screan .body .img_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 225px;
+  }
+  .screan .body .body_img {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 111px;
+  }
+  .screan .body .body_img_title {
+    margin: 0 0 0 16px;
+    font-size: 24px;
+  }
+  .screan .body .content_dropDown {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    padding-left: 0;
+    padding-right: 0;
+    row-gap: 20px;
+  }
+  .screan .body .content_dropDown .dropDown_elements {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    height: 30px;
+  }
+  .screan .body .content_dropDown .dropDown_elements h3 {
+    margin: 0;
+  }
+  .screan .body .content_dropDown .dropDown_elements img {
+    width: 16px;
+    height: 9px;
+  }
+  .screan .body .rental {
+    padding: 0;
+    margin-top: 22px;
+    margin-bottom: 27px;
+    border-radius: 25px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 255px;
+    row-gap: 20px;
+  }
+  .screan .footer .footer_containt {
+    display: flex;
+    align-items: end;
+    width: 133px;
+    height: 46px;
+  }
+  .screan .footer .footer_sentence {
+    font-size: 12px;
+    margin: 0;
+  }
+  .screan {
+    /* Housing page */
+  }
+  .screan .description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    margin-inline: 20px;
+    /* gap: initial; */
+    row-gap: 15px;
+    column-gap: 0px;
+  }
+  .screan .description .one h1 {
+    font-size: 18px;
+  }
+  .screan .description .one p {
+    font-size: 14px;
+  }
+  .screan .description .two {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .screan .description .two img {
+    width: 32px;
+    height: 32px;
+  }
+  .screan .description .two p {
+    font-size: 12px;
+  }
+  .screan .description .three {
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-start: 2;
+    grid-column: 1/-1;
+  }
+  .screan .description .three div {
+    font-size: 10px;
+    padding: 0;
+    padding-inline: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .screan .description .four {
+    align-items: center;
+    grid-column-start: 1;
+    max-width: fit-content;
+  }
+  .screan .description .five {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .screan .sliderStyles {
+    height: 255px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .screan .sliderStyles .leftArrowStyles img,
+  .screan .sliderStyles .rightArrowStyles img {
+    width: 24px;
+    height: 24px;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-inline: 100px;
   margin-top: 45px;
+  margin-bottom: 50px;
 }
 .header_nav {
   display: flex;
   column-gap: 57px;
 }
 .header_nav a:-webkit-any-link {
-  color: black;
   text-decoration: none;
+  color: black;
   font-family: "montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
+}
+.header_nav a:-webkit-any-link:hover {
+  text-decoration: underline;
 }
 
 .body {
   display: flex;
   flex-direction: column;
   margin-inline: 100px;
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 .body .body_img {
@@ -127,12 +278,148 @@ body {
   margin-top: 28px;
 }
 
+.sliderStyles {
+  height: 415px;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.sliderStyles .leftArrowStyles {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  left: 50px;
+}
+.sliderStyles .rightArrowStyles {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  right: 50px;
+}
+.sliderStyles .slideStyles {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.description {
+  margin-bottom: 50px;
+}
+.description * {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+}
 .description {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
   gap: 20px;
   margin-inline: 100px;
+  margin-top: 30px;
+}
+.description .one {
+  flex-direction: column;
+  color: #FF6060;
+  width: 100%;
+}
+.description .one p {
+  font-size: 18px;
+  color: black;
+}
+.description .two {
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.description .two p {
+  color: #FF6060;
+}
+.description .two img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.description .three {
+  gap: 10px;
+}
+.description .three div {
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+  padding: 3px 35.4406130268px;
+}
+.description .four {
+  display: flex;
+  justify-content: end;
+}
+.description .five {
+  grid-column: 1/3;
+  gap: 76px;
+}
+.description .five .dropDown {
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
+.description .five .dropDown .dropDown_elements {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.description .five .dropDown .dropDown_elements h3 {
+  padding-left: 15px;
+}
+.description .five .dropDown .dropDown_elements img {
+  margin-right: 15px;
+}
+.description .five .dropDown_Content {
+  background-color: #F6F6F6;
+  width: 100%;
+  display: none;
+}
+.description .five .dropDown_Content p {
+  padding: 15px;
+}
+
+.failLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 139px;
+  margin-bottom: 139px;
+}
+.failLoading .error404 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 288px;
+  font-weight: 700;
+  color: #FF6060;
+}
+.failLoading .pageDoesnt_exist {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+.failLoading .goTo_Welcome {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
 }
 
 /*# sourceMappingURL=index.css.map */

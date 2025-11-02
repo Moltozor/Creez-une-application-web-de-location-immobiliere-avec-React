@@ -13,7 +13,6 @@ export function Home() {
             try {
                 const response = await fetch('./data.json')
                 const data = await response.json()
-                console.log('dataItem=', data)
 
 
                 setData(data)
@@ -24,10 +23,10 @@ export function Home() {
         fetchData();
     }, [])
 
-    
+
 
     return (
-        <div>
+        <div className='screan'>
             <Header />
             <div className='body'>
 
@@ -46,4 +45,5 @@ export function Home() {
             <Footer />
         </div>
     )
+    
 }

@@ -1,0 +1,32 @@
+.failLoading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 139px;
+    margin-bottom: 139px;
+
+    .error404 {
+        margin: 0;
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 288px;
+        font-weight: 700;
+        color: #FF6060;
+    }
+
+    .pageDoesnt_exist {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF6060;
+    }
+
+    .goTo_Welcome {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+    }
+}
