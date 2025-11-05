@@ -246,5 +246,33 @@ body {
             }
         }
 
+        /* Error404 page */
+
+        .failLoading {
+
+            margin-top: 86px; /* 113px like the rest of contents, but the header have 27px margin bottom */
+            margin-bottom: 113px;
+            row-gap: 113px;
+
+            .error404 {
+                font-size: 96px;
+            }
+
+            .content_Two {
+                width: 260px;
+                text-align: center;
+
+                .pageDoesnt_exist {
+                    font-size: 18px;
+                }
+            }
+
+            .goTo_Welcome {
+                font-size: 14px;
+            }
+        }
+
     }
+
+
 }

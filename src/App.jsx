@@ -4,7 +4,6 @@ import { Home, About, Housing, ErrorPage } from './pages'
 
 function App() {
 
- 
   return (
     <>
       <BrowserRouter>

@@ -3,7 +3,7 @@ import { StarRate } from './starRate'
 import { DropDown } from './dropDown'
 
 
-export function Description({ /*title, host, rating, tags, details*/ data }) {
+export function Description({ data }) {
 
 
 

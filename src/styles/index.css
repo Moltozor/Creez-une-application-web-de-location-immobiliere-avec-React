@@ -182,6 +182,27 @@ body {
     width: 24px;
     height: 24px;
   }
+  .screan {
+    /* Error404 page */
+  }
+  .screan .failLoading {
+    margin-top: 86px; /* 113px like the rest of contents, but the header have 27px margin bottom */
+    margin-bottom: 113px;
+    row-gap: 113px;
+  }
+  .screan .failLoading .error404 {
+    font-size: 96px;
+  }
+  .screan .failLoading .content_Two {
+    width: 260px;
+    text-align: center;
+  }
+  .screan .failLoading .content_Two .pageDoesnt_exist {
+    font-size: 18px;
+  }
+  .screan .failLoading .goTo_Welcome {
+    font-size: 14px;
+  }
 }
 .header {
   display: flex;

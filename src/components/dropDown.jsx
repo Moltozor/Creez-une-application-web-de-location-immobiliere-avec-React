@@ -3,7 +3,6 @@ import dropDownArrow from '../assets/dropDownArrow.svg'
 
 import { useState } from 'react';
 
-// 1) Retourner directement un array d’éléments
 export function DropDown({title, content}) {
 
   const [isOpen, setIsOpen] = useState(false);
