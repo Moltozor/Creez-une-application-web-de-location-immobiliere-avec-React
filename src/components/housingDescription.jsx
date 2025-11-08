@@ -5,9 +5,6 @@ import { DropDown } from './dropDown'
 
 export function Description({ data }) {
 
-
-
-
     const style = {
         width: '100%',
     }

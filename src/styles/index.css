@@ -411,7 +411,13 @@ body {
   width: 100%;
   display: none;
 }
-.description .five .dropDown_Content p {
+.description .five .dropDown_Content_equipments {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+.description .five .dropDown_Content_Description {
   padding: 15px;
 }
 

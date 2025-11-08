@@ -130,7 +130,14 @@ $colorOne: #FF6060;
                 width: 100%;
                 display: none;
 
-                & p {
+                &_equipments {
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 3px;
+                }
+
+                &_Description {
                     padding: 15px;
                 }
             }
