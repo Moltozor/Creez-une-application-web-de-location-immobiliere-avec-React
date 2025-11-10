@@ -14,7 +14,7 @@ export function Header() {
                     Accueil
                 </NavLink>
 
-                <NavLink to="/about">
+                <NavLink to="/About">
                     À Propos
                 </NavLink>
             </nav>

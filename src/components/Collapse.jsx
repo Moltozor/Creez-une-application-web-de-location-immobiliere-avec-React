@@ -3,7 +3,7 @@ import dropDownArrow from '../assets/dropDownArrow.svg'
 
 import { useState } from 'react';
 
-export function DropDown({ title, content }) {
+export function Collapse({ title, content }) {
 
   const [isOpen, setIsOpen] = useState(false);
 

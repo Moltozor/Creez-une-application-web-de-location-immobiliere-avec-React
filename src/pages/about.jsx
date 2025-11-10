@@ -1,4 +1,4 @@
-import { Header, Footer, Banner, DropDown } from '../components'
+import { Header, Footer, Banner, Collapse } from '../components'
 import AboutImg from '../assets/AboutPicture.svg'
 import '../styles/index.css'
 
@@ -37,7 +37,7 @@ export function About() {
                 <Banner imageUrl={AboutImg} />
                 <div className='content_dropDown'>
                     {aboutList.map((Element, index) => (
-                        <DropDown key={index} title={Element.title} content={Element.content} />
+                        <Collapse key={index} title={Element.title} content={Element.content} />
                     ))}
                 </div>
             </div>

@@ -9,8 +9,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/housing/:id" element={<Housing />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Housing/:id" element={<Housing />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

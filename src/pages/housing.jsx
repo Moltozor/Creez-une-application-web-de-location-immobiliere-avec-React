@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Header, Footer, Carrousel, Description } from "../components";
 import { useParams } from 'react-router-dom';
 import '../styles/index.css'
-import { ErrorPage } from "./error404";
+import { ErrorPage } from "./ErrorPage";
 
 export function Housing() {
 
@@ -25,17 +25,17 @@ export function Housing() {
     }, [id])
 
 
-    if(!data) {
+    if (!data) {
         return <ErrorPage />
     }
 
     return (
         <div className="screan">
-                <Header />
-                {data ? <Carrousel pictures={data.pictures} /> : null}
-                {data ? <Description data={data} /> : null}
-                <Footer />
-            </div>
+            <Header />
+            <Carrousel pictures={data.pictures} />
+            <Description data={data} />
+            <Footer />
+        </div>
     )
 
 }

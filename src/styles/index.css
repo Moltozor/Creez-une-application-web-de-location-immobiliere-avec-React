@@ -110,13 +110,13 @@ body {
     grid-auto-rows: 255px;
     row-gap: 20px;
   }
-  .screan .footer .footer_containt {
+  .screan footer .footer_containt {
     display: flex;
     align-items: end;
     width: 133px;
     height: 46px;
   }
-  .screan .footer .footer_sentence {
+  .screan footer .footer_sentence {
     font-size: 12px;
     margin: 0;
   }
@@ -283,7 +283,7 @@ body {
   margin: 0;
 }
 
-.footer {
+footer {
   background-color: black;
   height: 209px;
   display: flex;
@@ -291,7 +291,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.footer_sentence {
+footer .footer_sentence {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;

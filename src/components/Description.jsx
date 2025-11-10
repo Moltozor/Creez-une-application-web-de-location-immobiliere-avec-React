@@ -1,6 +1,6 @@
 import '../styles/index.css'
-import { StarRate } from './starRate'
-import { DropDown } from './dropDown'
+import { StarRate } from './StarRate'
+import { Collapse } from './Collapse'
 
 
 export function Description({ data }) {
@@ -27,8 +27,8 @@ export function Description({ data }) {
             <div className="four" style={style}> <StarRate dataRate={data.rating} /> </div>
 
             <div className="five" style={style}>
-                <DropDown title={"Description"} content={data.description} />
-                <DropDown title={'Équipements'} content={data.equipments} />
+                <Collapse title={"Description"} content={data.description} />
+                <Collapse title={'Équipements'} content={data.equipments} />
             </div>
         </div >
     )
